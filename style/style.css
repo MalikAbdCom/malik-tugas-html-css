@@ -1,4 +1,7 @@
 /*                  global style */
+/* font */
+/* font-family: 'Poppins', sans-serif; */
+/* === */
 * {
   margin: 0;
   padding: 0;
@@ -7,6 +10,7 @@
 html {
   width: 100%;
   height: 100%;
+  font-family: 'Poppins', sans-serif;
 }
 a {
   text-decoration: none;
@@ -16,9 +20,59 @@ img {
   width: 100%;
   height: auto;
 }
+strong {
+  font-weight: 700;
+}
 .section-center {
   max-width: 1200px;
   width: 95%;
   margin-inline: auto;
 }
+.button {
+  display: inline-block;
+  margin-top: 3rem;
+  color: white;
+  text-transform: uppercase;
+  padding: 10px 20px;
+  background-color: #ff599f;
+  border-radius: 20px;
+  border-bottom: solid 3px transparent;
+  transition: all ease-in-out 300ms;
+}
 /*                  end of global style */
+/*          header */
+header {
+  background-size: cover;
+  background-position: center;
+  /* background-size: initial; */
+  background-repeat: no-repeat;
+  background-image: url('../assets/images/banner-bg.png');
+  display: grid;
+  place-items: center;
+  height: 100vh;
+}
+.header-section {
+  width: 85%;
+  text-align: center;
+  text-align: center;
+  color: white;
+  position: relative;
+  transform: translateY(-5rem);
+  max-width: 700px;
+  text-align: center;
+}
+.header-section h1 {
+  font-weight: 400;
+  font-size: 2.5rem;
+  line-height: 0.9;
+  margin-bottom: 2rem;
+}
+.header-section .button:hover {
+  border-bottom: solid 3px white;
+  transform: translateY(-3px);
+}
+.header-section .button:active {
+  transform: none;
+}
+
+/*          end of header */
