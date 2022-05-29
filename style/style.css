@@ -53,6 +53,10 @@ h6 {
   border-bottom: solid 3px transparent;
   transition: all ease-in-out 300ms;
 }
+::selection {
+  background-color: #ff599f;
+  color: white;
+}
 /*          end of global style */
 
 /*          navigation*/
