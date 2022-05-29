@@ -19,6 +19,9 @@ img {
   width: 100%;
   height: auto;
 }
+li {
+  list-style-type: none;
+}
 .section-center {
   max-width: 1200px;
   width: 95%;
@@ -33,6 +36,7 @@ img {
   width: 100%;
 }
 .nav-sticky {
+  background-color: white;
   top: 1rem;
   padding: 15px;
   border: solid 1px blue;
@@ -66,7 +70,6 @@ img {
   width: 30px;
 }
 .nav-button_hamburger:hover .nav-hamburget_button-line-top {
-  /* position: relative; */
   transform: translateY(10px) rotateZ(45deg);
 }
 .nav-button_hamburger:hover .nav-hamburget_button-line-middle {
@@ -77,8 +80,43 @@ img {
   /* position: relative; */
   transform: translateY(-10px) rotateZ(-45deg);
 }
+/* === nav open */
+.nav-sticky_open {
+  border-bottom-left-radius: 0;
+  border-bottom-right-radius: 0;
+}
+.nav-mobile_open {
+  position: fixed;
+  top: calc(56 + 1rem);
+  text-align: center;
+  background-color: white;
+  border-bottom-left-radius: 30px;
+  border-bottom-right-radius: 30px;
+  text-align: center;
+  border: solid 1px blue;
+  border-top: none;
+}
+.nav-mobile_open li {
+  border-bottom: 1px solid rgb(235, 235, 235);
+}
+.nav-mobile_open li:last-child {
+  border-bottom: none;
+}
+.nav-mobile_open a {
+  display: block;
+  text-transform: capitalize;
+  color: black;
+  padding: 15px 20px;
+}
 /*          end of navigation */
+
 .dummy {
   height: 1000px;
   width: 100%;
+  background-color: brown;
+}
+.dummy2 {
+  height: 1000px;
+  width: 100%;
+  background-color: blue;
 }
