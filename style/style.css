@@ -1,0 +1,24 @@
+/*                  global style */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html {
+  width: 100%;
+  height: 100%;
+}
+a {
+  text-decoration: none;
+}
+img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+.section-center {
+  max-width: 1200px;
+  width: 95%;
+  margin-inline: auto;
+}
+/*                  end of global style */
