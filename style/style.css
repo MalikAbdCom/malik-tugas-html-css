@@ -186,9 +186,59 @@ header {
 
 /*          end of header */
 
+/*          word process */
+.work-process {
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  border: red solid 1px;
+  padding: 2rem 0;
+  text-align: center;
+  background-image: url('../assets/images/work-process-bg.png');
+}
+.work-process_title {
+  color: white;
+  margin-bottom: 1.5rem;
+}
+.work-process h3 {
+  margin-bottom: 1rem;
+}
+.work-process_item-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 1.5rem;
+}
+.work-process_item {
+  background-color: white;
+  padding: 0.5rem;
+  margin-bottom: 1.5rem;
+  border-radius: 20px;
+  border: none;
+  width: 130px;
+  box-shadow: 10px 10px 0px 3px #a47de4;
+}
+.work-process_icon-img {
+  margin-bottom: 1rem;
+}
+.work-process_icon-img img {
+  width: 30px;
+  margin-inline: auto;
+}
+.work-process_item p {
+  color: grey;
+}
+/* === */
+@media screen and (min-width: 1024px) {
+  .work-process_title {
+    max-width: 500px;
+    margin-inline: auto;
+  }
+}
+/*          end of work process */
+
 /*          testimonial */
 .testimonials {
-  border: red solid 1px;
   padding: 2rem 0;
 }
 .testimonials p {
