@@ -62,6 +62,20 @@ hr {
   background-color: #ff599f;
   color: white;
 }
+input[type='text'],
+input[type='email'],
+textarea {
+  transition: all ease-in 300ms;
+  border: 1px solid transparent;
+  outline: 1px solid transparent;
+}
+
+input[type='text']:focus,
+input[type='email']:focus,
+textarea:focus {
+  border-color: #ff599f;
+  outline-color: #ff599f;
+}
 /*          end of global style */
 
 /*          navigation*/
@@ -199,6 +213,7 @@ header {
   justify-content: space-evenly;
   align-items: center;
   gap: 1.5rem;
+  z-index: 999;
 }
 .about-us_card {
   padding: 2rem 1rem;
@@ -309,8 +324,6 @@ header {
 }
 .testimonials p {
   color: grey;
-}
-.testimonials-flexbox {
 }
 .testimonial-title {
   text-align: center;
