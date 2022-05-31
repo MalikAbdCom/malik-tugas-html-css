@@ -93,7 +93,7 @@ textarea:focus {
 }
 .nav-sticky {
   background-color: white;
-  padding: 20px;
+  padding: 15px;
   border-radius: 30px;
   display: flex;
   align-items: center;
@@ -190,13 +190,16 @@ textarea:focus {
 }
 /* === */
 @media screen and (min-width: 1024px){
+  .nav-sticky{
+    padding: 20px 15px;
+  }
   .nav-button_hamburger{
     display: none;
   }
   .nav-desktop{
     display: flex;
     gap: 1rem;
-
+    align-items: center;
   }
   .nav-desktop a{
     color: black;
@@ -233,11 +236,6 @@ header {
   text-align: center;
   color: white;
   max-width: 700px;
-}
-@media screen and (min-width: 768px) {
-  .header-section {
-    transform: translateY(-6rem);
-  }
 }
 .header-section h1 {
   font-weight: 400;
@@ -695,6 +693,26 @@ footer {
 }
 .footer-icon {
   padding-bottom: 1.5rem;
+  display: flex;
+  gap: 1rem;
+  justify-content: center;
+}
+.footer-icon a{
+  color: white;
+  display: block;
+  /*width: 40px;*/
+  /*height: 40px;*/
+  border-radius: 50%;
+  background-color: white;
+}
+.footer-icon i{
+  display: block;
+  padding: 15px;
+  color: #ff08f3;
+}
+i.fa-facebook-f{
+  display: block;
+  padding-inline: 17px;
 }
 .footer-description p {
   font-size: 13px;
