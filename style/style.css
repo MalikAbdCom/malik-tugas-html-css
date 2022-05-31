@@ -464,7 +464,77 @@ header {
     max-width: 250px;
   }
 }
-/* end of pricing plan */ /* blog entries */
+/* end of pricing plan */
+
+/* trust calc*/
+.trust-calc{
+  text-align: center;
+  color: white;
+  /*height: 5rem;*/
+  background-image: url("../assets/images/fun-facts-bg.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+.trust-calc_container{
+  gap: 1rem;
+  padding: 2rem 0;
+  margin-inline: auto;
+}
+.trust-item{
+  margin: 1rem 0;
+}
+.ti1{
+  grid-area: ti1;
+}
+.ti2{
+  grid-area: ti2;
+}
+.ti3{
+  grid-area: ti3;
+}
+.ti4{
+  grid-area: ti4;
+}
+.trust-img{
+  display: none;
+}
+.trust-img img{
+  width: 50px;
+  margin: auto;
+}
+/* === */
+@media screen and (min-width: 768px){
+  .trust-calc_container{
+    grid-template-areas: "ti1 ti2"
+    "ti3 ti4";
+    gap: 2rem;
+    display: grid;
+    max-width: 500px;
+
+  }
+}
+@media screen and (min-width: 1024px){
+  .trust-calc_container{
+    display: flex;
+    gap: 1rem;
+    max-width: 100%;
+    justify-content: center;
+    align-items: center;
+  }
+  .trust-img{
+    display: block;
+  }
+  .trust-calc{
+    display: grid;
+    place-items: center;
+    height: 300px;
+  }
+}
+/* end of trust calc*/
+
+/* blog entries */
+
 .blog-entries {
   padding: 3rem 0;
   text-align: center;
